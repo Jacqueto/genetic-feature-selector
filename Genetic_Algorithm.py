@@ -193,7 +193,7 @@ def main():
         y = y.astype(int)
 
         if st.button("Run Genetic Algorithm"):
-            with st.spinner("Optimizing feature subset..."):
+            with st.spinner("Optimizing feature subset, please wait..."):
                 best_ind, best_score, progress = genetic_algorithm(
                     X, y, pop_size, generations, mutation_rate
                 )
